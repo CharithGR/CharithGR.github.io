@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color: #8592a4;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #1a202c;
+    color: #8592a4;
+  }
+
+ 
+
+/*----------------------- NAVBAR --------------------------------*/
+nav{  
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #2d3748;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    padding: 0 4%;
+    z-index: 100;
+}
+nav .logo{
+  font-size: 20px;
+}
+nav .mainMenu{
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a{
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+
+}
+
+nav .mainMenu li a:hover{
+  color: white;
+}
+
+nav .openMenu{
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu{
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 767px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0 ;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease;
+    display: none; 
+    background-color: #2d3748;
+
+  }
+
+  nav .mainMenu .closeMenu{
+    display: block ;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+  }
+
+  nav .openMenu{
+    display: block;
+  }
+  nav .mainMenu li a:hover{
+    font-size: 1.6rem;
+  }
+
+  .icons i{
+    display: inline-block;
+    padding: 12px;
+  }
+
+
+}
+
+/*----------------------------- Home ------------------------*/
+
+
+
+#home{  
+  margin: auto;
+  padding-top: 150px;
+  width: 80%;
+  font-size: 50px;
+  height: 100vh;
+}
+
+#homeBtndiv{
+  /* border: 1px solid yellow; */
+width: 80%;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#homeResumebtn{
+  background-color: #3f518b;
+  color: white;
+  width: 120px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+
+
+@media all and (max-width:800px) {
+  #home{      
+    font-size: 40px;
+  }
+}
+@media all and (max-width:550px) {
+  #home{      
+    font-size: 30px;
+  }
+}
+/*----------------------------- About Me ------------------------*/
+/* #aboutMe{
+  margin-top: 50px;
+} */
+#aboutMe h1{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 25px;
+}
+#aboutMe>div{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+#aboutMe>div>div:nth-child(1){
+  width: 50%;
+}
+#aboutMe p{
+  font-size: 18px;
+}
+#aboutMe img{
+  
+  width: 200px;
+  height: 275px;
+  border-radius: 25px;
+}
+
+
+@media all and (max-width:500px) {
+  #aboutMe>div{
+    display: block;
+  }
+  #aboutMe>div>div:nth-child(1){
+    width: 100%;
+  }
+}
