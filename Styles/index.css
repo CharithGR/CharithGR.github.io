@@ -1,71 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-a{
+a {
   text-decoration: none;
   color: #8592a4;
 }
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #1a202c;
-    color: #8592a4;
-  }
-
- 
+  font-family: "Poppins", sans-serif;
+  background-color: #1a202c;
+  color: #8592a4;
+}
 
 /*----------------------- NAVBAR --------------------------------*/
-nav{  
-   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #2d3748;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
-    position: fixed;
-    width: 100%;
-    padding: 0 4%;
-    z-index: 100;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #2d3748;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  padding: 0 4%;
+  z-index: 100;
 }
-nav .logo{
+nav .logo {
   font-size: 20px;
 }
-nav .mainMenu{
+nav .mainMenu {
   display: flex;
   list-style: none;
 }
-nav .mainMenu li a{
+nav .mainMenu li a {
   display: inline-block;
   padding: 15px;
   text-decoration: none;
-
 }
 
-nav .mainMenu li a:hover{
+nav .mainMenu li a:hover {
   color: white;
 }
 
-nav .openMenu{
+nav .openMenu {
   font-size: 2rem;
   display: none;
   cursor: pointer;
 }
-nav .mainMenu .closeMenu{
+nav .mainMenu .closeMenu {
   font-size: 2rem;
   display: none;
   cursor: pointer;
 }
-
 
 @media (max-width: 767px) {
   nav .mainMenu {
     height: 100vh;
     position: fixed;
-    top: 0 ;
+    top: 0;
     right: 0;
     left: 0;
     z-index: 10;
@@ -73,39 +69,33 @@ nav .mainMenu .closeMenu{
     justify-content: center;
     align-items: center;
     transition: top 1s ease;
-    display: none; 
+    display: none;
     background-color: #2d3748;
-
   }
 
-  nav .mainMenu .closeMenu{
-    display: block ;
+  nav .mainMenu .closeMenu {
+    display: block;
     position: absolute;
     top: 20px;
     right: 20px;
-
   }
 
-  nav .openMenu{
+  nav .openMenu {
     display: block;
   }
-  nav .mainMenu li a:hover{
+  nav .mainMenu li a:hover {
     font-size: 1.6rem;
   }
 
-  .icons i{
+  .icons i {
     display: inline-block;
     padding: 12px;
   }
-
-
 }
 
 /*----------------------------- Home ------------------------*/
 
-
-
-#home{  
+#home {
   margin: auto;
   padding-top: 150px;
   width: 80%;
@@ -113,15 +103,15 @@ nav .mainMenu .closeMenu{
   height: 100vh;
 }
 
-#homeBtndiv{
+#homeBtndiv {
   /* border: 1px solid yellow; */
-width: 80%;
-margin: auto;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#homeResumebtn{
+#homeResumebtn {
   background-color: #3f518b;
   color: white;
   width: 120px;
@@ -130,54 +120,162 @@ align-items: center;
   border-radius: 5px;
 }
 
-
-
-@media all and (max-width:800px) {
-  #home{      
+@media all and (max-width: 800px) {
+  #home {
     font-size: 40px;
   }
 }
-@media all and (max-width:550px) {
-  #home{      
+@media all and (max-width: 550px) {
+  #home {
     font-size: 30px;
   }
 }
 /*----------------------------- About Me ------------------------*/
 /* #aboutMe{
-  margin-top: 50px;
+ height: 100vh;
+ margin-top: 50px;
 } */
-#aboutMe h1{
+#aboutMe h1 {
   margin: auto;
   display: flex;
   justify-content: center;
   align-self: center;
   margin-bottom: 25px;
 }
-#aboutMe>div{
+#aboutMe > div {
   display: flex;
   width: 80%;
   margin: auto;
   justify-content: space-around;
 }
-#aboutMe>div>div:nth-child(1){
+#aboutMe > div > div:nth-child(1) {
   width: 50%;
 }
-#aboutMe p{
+#aboutMe p {
   font-size: 18px;
 }
-#aboutMe img{
-  
+#aboutMe img {
   width: 200px;
   height: 275px;
   border-radius: 25px;
 }
 
-
-@media all and (max-width:500px) {
-  #aboutMe>div{
+@media all and (max-width: 500px) {
+  #aboutMe > div {
     display: block;
   }
-  #aboutMe>div>div:nth-child(1){
+  #aboutMe > div > div:nth-child(1) {
     width: 100%;
   }
+}
+
+/*---------------SKILLS-----------------------*/
+
+#skills {
+  margin-top: 100px;
+}
+#skills h1 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+#skills div {
+  /* border: 1px solid yellow; */
+  /* height: 1vh; */
+
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skills img {
+  width: 80px;
+  height: 80px;
+}
+
+@media all and (max-width: 500px) {
+  #skills > div {
+    width: 80%;
+  }
+}
+
+/*-------------------PROJECTS------------------------*/
+
+#projects h1 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+#projCards {
+  width: 90%;
+  margin: auto;
+}
+
+#projCards > div {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#projCards > div>div{
+  width: 35%;
+}
+#projCards > div img {
+  width: 50vw;
+  /* height: 300px; */
+}
+#projButtonDiv{
+  display: flex;
+  justify-content: space-between;
+}
+#projButtonDiv button {
+  width: 75px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #3f518b;
+  color: white;
+  font-size: 14px;
+}
+
+#projButtonDiv button:hover{
+  cursor: pointer;
+}
+
+
+@media all and (max-width: 800px) {
+  #projCards > div {
+    display: block;
+  }
+  #projCards > div img {
+    width:90vw;
+  }
+  #projCards > div>div{
+   width: 50%;
+   margin: auto;
+  }
+}
+
+
+/*-------------------GITHUB------------------------*/
+
+#github h1{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+
+.calendar{
+  width: 70%;
+  margin: auto;
 }
