@@ -1,3 +1,8 @@
+
+
+
+// --------------------NAVBAR----------
+
 const mainMenu=document.querySelector(".mainMenu");
 const closeMenu=document.querySelector(".closeMenu");
 const openMenu=document.querySelector(".openMenu");
@@ -18,6 +23,17 @@ function close(){
     
 }
 
+//------------ RESUME BUTTON--------------
+
+// let ResumeBtn=document.getElementById("homeBtndiv")
+// ResumeBtn.onclick=()=>{
+  
+// }
+
+
+
+
+//------------ GITHUB--------------
 
 // GitHubCalendar(".calendar", "CharithGR");
   // or enable responsive functionality:
