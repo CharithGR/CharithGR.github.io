@@ -19,9 +19,9 @@ function close(){
 }
 
 
-GitHubCalendar(".calendar", "CharithGR");
+// GitHubCalendar(".calendar", "CharithGR");
   // or enable responsive functionality:
-//   GitHubCalendar(".calendar", "CharithGR", { responsive: true });
+  GitHubCalendar(".calendar", "CharithGR", { responsive: true });
 
   // Use a proxy
 //   GitHubCalendar(".calendar", "CharithGR", {
