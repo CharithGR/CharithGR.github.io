@@ -296,6 +296,7 @@ nav .mainMenu .closeMenu {
 
 #contactMe{
   margin-bottom: 100px;
+  /* background-color: white; */
 }
 #contactMe>h1{
   margin: auto;
@@ -305,14 +306,16 @@ nav .mainMenu .closeMenu {
   margin-top: 150px;
   margin-bottom: 50px;
 }
-
-#contactMe div{
-  width: 50%;
+#contactMe>div{
+  width: 90%;
   margin: auto;
   display: flex;
-  justify-content: center;
-  align-self: center;
-  margin-bottom: 20px;
+}
+#contactMe>div>div:nth-child(1){
+  width: 25%;
+}
+#contactMe>div>div:nth-child(2){
+  width: 70%;
 }
 #contactMe div p{
   display: inline;
@@ -325,10 +328,55 @@ nav .mainMenu .closeMenu {
   width: 50px;
   height:50px;
 }
+form{
+  width: 100%;
+ 
+}
+form input:nth-child(1){
+  width: 45%;
+  height: 40px;
+}
+form input:nth-child(2){
+  margin-left: 50px;
+  width: 45%;
+  height: 40px;
 
+}
+textarea{
+  width: 45%;
+  height: 150px;
+}
 
+input,textarea{
+  border: none;  
+}
+form button{
+  display: block;
+  width: 75px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #3f518b;
+  color: white;
+  font-size: 14px;
+}
+@media all and (max-width: 900px) { 
 
+  form input:nth-child(1),form input:nth-child(2),textarea{
+    width: 100%;   
+  }
+  form input:nth-child(2){
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  
+}
+@media all and (max-width: 700px) {
+  #contactMe>div{
+    
+    display: block;
+  }
+  #contactMe>div>div:nth-child(1){
+    display: grid;
 
-
-
-
+  }
+}
