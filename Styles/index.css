@@ -102,7 +102,12 @@ nav .mainMenu .closeMenu {
   font-size: 50px;
   height: 100vh;
 }
-
+#home>div{
+  display: flex;
+}
+#home img{
+  border-radius: 20px;
+}
 #homeBtndiv {
   /* border: 1px solid yellow; */
   width: 80%;
@@ -142,15 +147,19 @@ nav .mainMenu .closeMenu {
   align-self: center;
   margin-bottom: 25px;
 }
+#aboutMe>div>div p{
+  font-size: 25px;
+}
 #aboutMe > div {
   display: flex;
-  width: 80%;
+  width: 70%;
   margin: auto;
   justify-content: space-around;
 }
 #aboutMe > div > div:nth-child(1) {
   width: 50%;
 }
+
 #aboutMe p {
   font-size: 18px;
 }
@@ -358,6 +367,7 @@ form button{
   background-color: #3f518b;
   color: white;
   font-size: 14px;
+  margin-top: 10px;
 }
 @media all and (max-width: 900px) { 
 
