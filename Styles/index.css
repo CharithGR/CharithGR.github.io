@@ -124,15 +124,24 @@ nav .mainMenu .closeMenu {
   font-size: 16px;
   border-radius: 5px;
 }
-
-@media all and (max-width: 800px) {
+@media all and (max-width: 1200px) {
   #home {
-    font-size: 40px;
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 800px) {
+ 
+  #home img{
+    width: 360px;
+    height: 240px;
+  }
+  #home {
+    font-size: 30px;
   }
 }
 @media all and (max-width: 550px) {
   #home {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 /*----------------------------- About Me ------------------------*/
@@ -169,7 +178,10 @@ nav .mainMenu .closeMenu {
   border-radius: 25px;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
+  #aboutMe>div>div p{
+    font-size: 16px;
+  }
   #aboutMe > div {
     display: block;
   }
