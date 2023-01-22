@@ -31,7 +31,10 @@ ResumeBtn.onclick=()=>{
 }
 
 
-
+let navResume=document.getElementById("navResume")
+navResume.onclick=()=>{
+  window.open("./Images/Charith_GR_Resume.pdf", "_blank")
+}
 
 //------------ GITHUB--------------
 
