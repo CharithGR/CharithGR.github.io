@@ -102,9 +102,9 @@ nav .mainMenu .closeMenu {
   font-size: 50px;
   height: 100vh;
 }
-#home>div{
+/* #home>div{
   display: flex;
-}
+} */
 #home img{
   border-radius: 20px;
 }
@@ -124,9 +124,10 @@ nav .mainMenu .closeMenu {
   font-size: 16px;
   border-radius: 5px;
 }
+
 @media all and (max-width: 1200px) {
   #home {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 @media all and (max-width: 800px) {
@@ -188,6 +189,15 @@ nav .mainMenu .closeMenu {
   #aboutMe > div > div:nth-child(1) {
     width: 100%;
   }
+  #aboutMe img {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 275px;
+    border-radius: 25px;
+  }
+  
 }
 
 /*---------------SKILLS-----------------------*/
@@ -228,6 +238,16 @@ nav .mainMenu .closeMenu {
     height: 80px;
     margin-right: 10px;
   }
+  #skills h1{
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 400px){
+  #skills img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
 }
 
 /*-------------------PROJECTS------------------------*/
@@ -253,6 +273,7 @@ nav .mainMenu .closeMenu {
 }
 #projCards > div>div{
   width: 35%;
+
 }
 #projCards > div img {
   width: 50vw;
@@ -263,6 +284,7 @@ nav .mainMenu .closeMenu {
   justify-content: space-between;
 }
 #projButtonDiv button {
+  border: none;
   width: 75px;
   height: 40px;
   border-radius: 10px;
@@ -284,8 +306,11 @@ nav .mainMenu .closeMenu {
     width:90vw;
   }
   #projCards > div>div{
-   width: 50%;
+   width: 100%;
    margin: auto;
+  }
+  #projects h1 {
+    font-size: 30px;
   }
 }
 
@@ -300,7 +325,20 @@ nav .mainMenu .closeMenu {
   margin-top: 150px;
   margin-bottom: 50px;
 }
-
+#githubCards{
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#github img{
+  width: 30%;
+  height:200px;
+  display: flex;
+  /* background-color: red; */
+}
 
 .calendar{
   width: 70%;
@@ -309,6 +347,13 @@ nav .mainMenu .closeMenu {
 @media all and (max-width: 800px) {
   .calendar{
     width:100%;
+  }
+  #githubCards{
+    display: block;
+  }
+  #github img{
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -331,6 +376,7 @@ nav .mainMenu .closeMenu {
   width: 90%;
   margin: auto;
   display: flex;
+  
 }
 #contactMe>div>div:nth-child(1){
   width: 25%;
@@ -393,12 +439,27 @@ form button{
   
 }
 @media all and (max-width: 700px) {
-  #contactMe>div{
-    
+  #contactMe>div{    
     display: block;
+    width: 100%;
+    margin: auto;
   }
   #contactMe>div>div:nth-child(1){
+    width: 40%;
+    margin: auto;
     display: grid;
-
+  }
+  #contactMe>div>div:nth-child(2){
+    width: 80%;
+    margin: auto;
+  }
+  form input:nth-child(1){
+    width: 100%;
+    height: 40px;
+  }
+  form input:nth-child(2){
+    width: 100%;
+    height: 40px;
+  
   }
 }

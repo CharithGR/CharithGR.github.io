@@ -25,10 +25,10 @@ function close(){
 
 //------------ RESUME BUTTON--------------
 
-// let ResumeBtn=document.getElementById("homeBtndiv")
-// ResumeBtn.onclick=()=>{
-  
-// }
+let ResumeBtn=document.getElementById("homeBtndiv")
+ResumeBtn.onclick=()=>{
+  window.open("./Images/Charith_GR_Resume.pdf", "_blank")
+}
 
 
 
