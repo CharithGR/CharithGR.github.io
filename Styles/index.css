@@ -125,9 +125,19 @@ nav .mainMenu .closeMenu {
   border-radius: 5px;
 }
 
+@media all and (max-width: 1500px) {
+  #home{
+   font-size: 45px;
+   height: auto;
+  }
+}
+
+
+
 @media all and (max-width: 1200px) {
   #home {
     font-size: 40px;
+    height: auto;
   }
 }
 @media all and (max-width: 800px) {
@@ -203,7 +213,7 @@ nav .mainMenu .closeMenu {
 /*---------------SKILLS-----------------------*/
 
 #skills {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #skills h1 {
   margin: auto;
@@ -212,22 +222,33 @@ nav .mainMenu .closeMenu {
   align-self: center;
 }
 
-#skills div {
-  /* border: 1px solid yellow; */
-  /* height: 1vh; */
+/* #skills div {
+  border: 1px solid yellow;
+  height: 1vh;
 
-  width: 50%;
+  width: 70%;
   margin: auto;
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 #skills img {
   width: 100px;
   height: 100px;
   margin-right: 20px;
 }
+#sk,#t1{
+  /* background-color: yellow; */
+  width: 50%;
+  margin: auto;
+}
+#s1,#s2,#t1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media all and (max-width: 500px) {
   #skills > div {
@@ -257,7 +278,7 @@ nav .mainMenu .closeMenu {
   display: flex;
   justify-content: center;
   align-self: center;
-  margin-top: 150px;
+  margin-top: 75px;
   margin-bottom: 50px;
 }
 
@@ -297,6 +318,9 @@ nav .mainMenu .closeMenu {
   cursor: pointer;
 }
 
+#techStack{
+  color:#3f518b ;
+}
 
 @media all and (max-width: 800px) {
   #projCards > div {
@@ -375,15 +399,35 @@ nav .mainMenu .closeMenu {
 #contactMe>div{
   width: 90%;
   margin: auto;
-  display: flex;
+  padding: 3%;
+  /* display: flex; */
+  /* background-color: red; */
   
 }
 #contactMe>div>div:nth-child(1){
-  width: 25%;
+  width: 35%;  
+  margin: auto;
+  /* background-color: yellow; */
+  /* display: flex; */
+  /* align-items: flex-end; */
+}
+#contactMe>div>div:nth-child(1)>div{
+  /* width: 25%; */
+  margin: auto;
+  /* background-color:blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #contactMe>div>div:nth-child(2){
   width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellow; */
 }
+
 #contactMe div p{
   display: inline;
 }
@@ -395,9 +439,16 @@ nav .mainMenu .closeMenu {
   width: 50px;
   height:50px;
 }
+#contactMe input,textarea{
+  padding: 2%;
+}
+#contactMe button{
+  border: none;
+  display: block;
+  margin: auto;
+}
 form{
-  width: 100%;
- 
+  width: 100%; 
 }
 form input:nth-child(1){
   width: 45%;
@@ -410,7 +461,7 @@ form input:nth-child(2){
 
 }
 textarea{
-  width: 45%;
+  width: 95%;
   height: 150px;
 }
 
@@ -427,7 +478,7 @@ form button{
   font-size: 14px;
   margin-top: 10px;
 }
-@media all and (max-width: 900px) { 
+/* @media all and (max-width: 900px) { 
 
   form input:nth-child(1),form input:nth-child(2),textarea{
     width: 100%;   
@@ -437,8 +488,8 @@ form button{
     margin-top: 20px;
   }
   
-}
-@media all and (max-width: 700px) {
+} */
+@media all and (max-width: 1000px) {
   #contactMe>div{    
     display: block;
     width: 100%;
@@ -454,12 +505,17 @@ form button{
     margin: auto;
   }
   form input:nth-child(1){
+    /* margin-left: 0px; */
     width: 100%;
     height: 40px;
+    margin-bottom: 10px;
   }
   form input:nth-child(2){
+    margin-left: 0px;
     width: 100%;
-    height: 40px;
-  
+    height: 40px;  
+  }
+  form textarea{
+    width: 100%;
   }
 }
