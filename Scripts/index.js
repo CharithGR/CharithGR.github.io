@@ -27,13 +27,13 @@ function close(){
 
 let ResumeBtn=document.getElementById("homeBtndiv")
 ResumeBtn.onclick=()=>{
-  window.open("./Images/Charith_GR_Resume.pdf", "_blank")
+  window.open("./Images/fw21_1096_Charith_GR_Resume.pdf", "_blank")
 }
 
 
 let navResume=document.getElementById("navResume")
 navResume.onclick=()=>{
-  window.open("./Images/Charith_GR_Resume.pdf", "_blank")
+  window.open("./Images/fw21_1096_Charith_GR_Resume.pdf", "_blank")
 }
 
 //------------ GITHUB--------------
